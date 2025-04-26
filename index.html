@@ -6,8 +6,8 @@
     <title>Robopie Tutorials</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #56CCF2, #2F80ED);
             margin: 0;
             padding: 20px;
             text-align: center;
@@ -18,21 +18,42 @@
             flex-direction: column;
         }
         h1 {
-            color: #333;
+            color: white;
             margin-bottom: 20px;
+            font-size: 36px;
+        }
+        .tutorial-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .tutorial-item {
+            background-color: #ffffff;
+            color: #333;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .tutorial-item:hover {
+            background-color: #4CAF50;
+            color: white;
         }
         iframe {
             width: 80%;
             height: 80vh;
             border: none;
             margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-        select {
-            padding: 10px;
-            font-size: 16px;
-            margin-top: 20px;
-            width: 300px;
+        footer {
+            margin-top: 40px;
+            color: white;
         }
     </style>
 </head>
@@ -40,23 +61,32 @@
 
     <h1>Robopie Tutorials</h1>
 
-    <select onchange="loadPDF(this.value)">
-        <option value="">-- Select Tutorial --</option>
-        <option value="smart_dustbin_system_tutorial.pdf">SMART DUSTBIN SYSTEM TUTORIAL</option>
-        <option value="electronics_robotics_terms.pdf">Electronics and Robotics Terms for Students</option>
-        <option value="automatic_plant_watering_system.pdf">Automatic Plant Watering System Using Soil Moisture Sensor and Arduino</option>
-        <option value="4_digit_password_lock_keypad_servo.pdf">4-Digit Password Lock Using Keypad & Servo Motor with Arduino</option>
-    </select>
+    <div>
+        <ul class="tutorial-list">
+            <li class="tutorial-item" onclick="loadHTML('smart_dustbin_system_tutorial.html')">
+                SMART DUSTBIN SYSTEM TUTORIAL
+            </li>
+            <li class="tutorial-item" onclick="loadHTML('electronics_robotics_terms.html')">
+                Electronics and Robotics Terms for Students
+            </li>
+            <li class="tutorial-item" onclick="loadHTML('automatic_plant_watering_system.html')">
+                Automatic Plant Watering System Using Soil Moisture Sensor and Arduino
+            </li>
+            <li class="tutorial-item" onclick="loadHTML('4_digit_password_lock_keypad_servo.html')">
+                4-Digit Password Lock Using Keypad & Servo Motor with Arduino
+            </li>
+        </ul>
+    </div>
 
-    <iframe id="pdfViewer" src=""></iframe>
+    <iframe id="htmlViewer" src=""></iframe>
+
+    <footer>
+        <p>&copy; 2025 Robopie. All Rights Reserved.</p>
+    </footer>
 
     <script>
-        function loadPDF(file) {
-            if (file) {
-                document.getElementById('pdfViewer').src = file;
-            } else {
-                document.getElementById('pdfViewer').src = "";
-            }
+        function loadHTML(file) {
+            document.getElementById('htmlViewer').src = file;
         }
     </script>
 
