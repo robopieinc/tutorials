@@ -1,4 +1,4 @@
-# RoboPie Tutorials
+# Robopie Tutorials
 
 Welcome to the official RoboPie Tutorials repository! 🚀
 
