@@ -1,82 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RoboPie Tutorials</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-    }
-    .tutorials {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-    .tutorial-card {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      margin: 10px;
-      width: 250px;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .tutorial-card h3 {
-      margin: 0;
-      font-size: 18px;
-    }
-    .tutorial-card a {
-      color: #4CAF50;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .tutorial-card a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RoboPie Tutorials</title>
+<style>
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    pointer-events: auto;
+  }
+</style>
+<script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
 </head>
 <body>
 
-<header>
-  <h1>Welcome to RoboPie Tutorials</h1>
-  <p>Your guide to Arduino, Robotics, IoT, and CNC Projects</p>
-</header>
+<h2>SMART DUSTBIN SYSTEM TUTORIAL</h2>
+<iframe src="smart_dustbin_system_tutorial.pdf"></iframe>
 
-<div class="tutorials">
-  <div class="tutorial-card">
-    <h3><a href="https://robopieinc.github.io/tutorials/arduino_basics.pdf" target="_blank">Arduino Basics</a></h3>
-    <p>Learn the fundamentals of Arduino programming with easy-to-follow steps.</p>
-  </div>
-  <!-- Repeat this block for more tutorials -->
-</div>
+<h2>Electronics and Robotics Terms for Students</h2>
+<iframe src="electronics_robotics_terms.pdf"></iframe>
 
-<footer>
-  <p>&copy; 2025 RoboPie Inc. All rights reserved.</p>
-</footer>
+<h2>Automatic Plant Watering System Using Soil Moisture Sensor and Arduino</h2>
+<iframe src="automatic_plant_watering_system.pdf"></iframe>
+
+<h2>4-Digit Password Lock Using Keypad & Servo Motor with Arduino</h2>
+<iframe src="4_digit_password_lock_keypad_servo.pdf"></iframe>
 
 </body>
 </html>
