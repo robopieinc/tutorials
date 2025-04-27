@@ -3,48 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorials</title>
+    <title>Robopie Tutorials</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background: #f0f2f5;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+            background: linear-gradient(90deg, #0066ff, #00ccff);
+            color: white;
+            padding: 30px 0;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
-        .tutorial-list {
-            list-style-type: none;
-            margin: 0;
-            padding: 20px;
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
         }
-        .tutorial-list li {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .tutorial-list li:hover {
-            background-color: #f1f1f1;
-        }
-        .tutorial-list a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
+        .tutorial-card {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
             display: flex;
             align-items: center;
         }
-        .tutorial-list img {
-            width: 50px;
-            height: auto;
-            margin-right: 10px;
+        .tutorial-card:hover {
+            transform: translateY(-5px);
+        }
+        .tutorial-card img {
+            width: 120px;
+            height: 100%;
+            object-fit: cover;
+        }
+        .tutorial-info {
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .tutorial-info a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .tutorial-info a:hover {
+            color: #0066ff;
         }
     </style>
 </head>
@@ -52,53 +61,74 @@
 
 <header>
     <h1>Robopie Tutorials</h1>
-    <p>Explore our range of tutorials</p>
+    <p>Beginner-friendly projects for students, makers, and enthusiasts</p>
 </header>
 
-<ul class="tutorial-list">
-    <li>
-        <a href="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/4DigitPasswordLockUsingKeypadServoMotorwithAr.html" target="_blank">
-            <img src="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/images/image1.png" alt="Password Lock Image">
-            4-Digit Password Lock Using Keypad & Servo Motor with Arduino
-        </a>
-    </li>
-    <li>
-        <a href="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/AutomaticPlantWateringSystemUsingSoilMoisture.html" target="_blank">
-            <img src="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/images/image1.png" alt="Plant Watering Image">
-            Automatic Plant Watering System Using Soil Moisture Sensor and Arduino
-        </a>
-    </li>
-    <li>
-        <a href="Controlling a 7-Segment Display via Serial Monitor using Arduino/Controllinga7SegmentDisplayviaSerialMonitorus.html" target="_blank">
-            <img src="Controlling a 7-Segment Display via Serial Monitor using Arduino/images/image1.png" alt="7-Segment Display Image">
-            Controlling a 7-Segment Display via Serial Monitor using Arduino
-        </a>
-    </li>
-    <li>
-        <a href="Electronics and Robotics Terms for Students/ElectronicsandRoboticsTermsforStudents.html" target="_blank">
-            <img src="Electronics and Robotics Terms for Students/images/image1.png" alt="Electronics Terms Image">
-            Electronics and Robotics Terms for Students
-        </a>
-    </li>
-    <li>
-        <a href="Neopixel LED/NeopixleLED.html" target="_blank">
-            <img src="Neopixel LED/images/image1.png" alt="Neopixel LED Image">
-            Neopixel LED
-        </a>
-    </li>
-    <li>
-        <a href="SMART DUSTBIN SYSTEM TUTORIAL/SMARTDUSTBINSYSTEMTUTORIAL.html" target="_blank">
-            <img src="SMART DUSTBIN SYSTEM TUTORIAL/images/image1.png" alt="Dustbin System Image">
-            SMART DUSTBIN SYSTEM TUTORIAL
-        </a>
-    </li>
-    <li>
-        <a href="Ultrasonic Radar with Arduino/UltrasonicRadarwithArduino.html" target="_blank">
-            <img src="Ultrasonic Radar with Arduino/images/image1.png" alt="Ultrasonic Radar Image">
-            Ultrasonic Radar with Arduino
-        </a>
-    </li>
-</ul>
+<div class="container">
+    <div class="tutorial-card">
+        <img src="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/images/image1.png" alt="Password Lock">
+        <div class="tutorial-info">
+            <a href="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/4DigitPasswordLockUsingKeypadServoMotorwithAr.html" target="_blank">
+                4-Digit Password Lock Using Keypad & Servo Motor with Arduino
+            </a>
+        </div>
+    </div>
+
+    <div class="tutorial-card">
+        <img src="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/images/image1.png" alt="Plant Watering">
+        <div class="tutorial-info">
+            <a href="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/AutomaticPlantWateringSystemUsingSoilMoisture.html" target="_blank">
+                Automatic Plant Watering System Using Soil Moisture Sensor and Arduino
+            </a>
+        </div>
+    </div>
+
+    <div class="tutorial-card">
+        <img src="Controlling a 7-Segment Display via Serial Monitor using Arduino/images/image1.png" alt="7-Segment Display">
+        <div class="tutorial-info">
+            <a href="Controlling a 7-Segment Display via Serial Monitor using Arduino/Controllinga7SegmentDisplayviaSerialMonitorus.html" target="_blank">
+                Controlling a 7-Segment Display via Serial Monitor using Arduino
+            </a>
+        </div>
+    </div>
+
+    <div class="tutorial-card">
+        <img src="Electronics and Robotics Terms for Students/images/image1.png" alt="Electronics Terms">
+        <div class="tutorial-info">
+            <a href="Electronics and Robotics Terms for Students/ElectronicsandRoboticsTermsforStudents.html" target="_blank">
+                Electronics and Robotics Terms for Students
+            </a>
+        </div>
+    </div>
+
+    <div class="tutorial-card">
+        <img src="Neopixel LED/images/image1.png" alt="Neopixel LED">
+        <div class="tutorial-info">
+            <a href="Neopixel LED/NeopixleLED.html" target="_blank">
+                Neopixel LED
+            </a>
+        </div>
+    </div>
+
+    <div class="tutorial-card">
+        <img src="SMART DUSTBIN SYSTEM TUTORIAL/images/image1.png" alt="Smart Dustbin">
+        <div class="tutorial-info">
+            <a href="SMART DUSTBIN SYSTEM TUTORIAL/SMARTDUSTBINSYSTEMTUTORIAL.html" target="_blank">
+                SMART DUSTBIN SYSTEM TUTORIAL
+            </a>
+        </div>
+    </div>
+
+    <div class="tutorial-card">
+        <img src="Ultrasonic Radar with Arduino/images/image1.png" alt="Ultrasonic Radar">
+        <div class="tutorial-info">
+            <a href="Ultrasonic Radar with Arduino/UltrasonicRadarwithArduino.html" target="_blank">
+                Ultrasonic Radar with Arduino
+            </a>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
