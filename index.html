@@ -3,107 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robopie Tutorials</title>
+    <title>Robopie Inc. Tutorials</title>
+
     <style>
         body {
+            background-color: #0d0d0d;
+            color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0d0d1a; /* Dark background */
-            color: #f0f0f5; /* Light text */
         }
         header {
-            background: linear-gradient(135deg, #0f3460, #16213e); /* Oppel gemstone feel */
-            color: #fff;
-            padding: 30px;
+            background: linear-gradient(90deg, #800000, #6A0DAD, #228B22, #FFDD00);
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.6);
-        }
-        .tutorial-list {
-            list-style-type: none;
-            margin: 20px;
-            padding: 0;
-        }
-        .tutorial-list li {
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            border: 1px solid #2c2c54;
-            margin: 15px 0;
-            padding: 15px;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-        }
-        .tutorial-list li:hover {
-            background: linear-gradient(135deg, #3a0ca3, #4361ee);
-            transform: translateY(-3px);
-        }
-        .tutorial-list a {
-            text-decoration: none;
-            color: #f0f0f5;
+            font-size: 28px;
             font-weight: bold;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        .subheader {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #ddd;
+        }
+        .accordion {
+            margin: 20px;
+        }
+        .accordion-item {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .accordion-header {
+            background: linear-gradient(90deg, #6A0DAD, #FFDD00);
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
         }
-        .tutorial-list img {
-            width: 60px;
-            height: auto;
-            margin-right: 15px;
-            border-radius: 8px;
-            border: 2px solid #2c2c54;
+        .accordion-header:hover {
+            background: linear-gradient(90deg, #FFDD00, #6A0DAD);
+        }
+        .accordion-content {
+            display: none;
+            background-color: #262626;
+            padding: 15px;
+        }
+        .accordion-content a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #00ff88;
+            font-weight: bold;
+            border: 1px solid #00ff88;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .accordion-content a:hover {
+            background-color: #00ff88;
+            color: #0d0d0d;
+        }
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 30px;
+            border-top: 1px solid #333;
+            color: #888;
+        }
+        .arrow {
+            transition: transform 0.3s;
+        }
+        .arrow.rotate {
+            transform: rotate(90deg);
         }
     </style>
+
 </head>
 <body>
 
 <header>
-    <h1>Robopie Tutorials</h1>
-    <p>Explore our latest projects and guides 🚀</p>
+    Robopie Inc. Tutorials
+    <div class="subheader">Explore our exciting electronics projects 🚀</div>
 </header>
 
-<ul class="tutorial-list">
-    <li>
-        <a href="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/4DigitPasswordLockUsingKeypadServoMotorwithAr.html" target="_blank">
-            <img src="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/images/image1.png" alt="Password Lock Image">
+<div class="accordion">
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
             4-Digit Password Lock Using Keypad & Servo Motor with Arduino
-        </a>
-    </li>
-    <li>
-        <a href="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/AutomaticPlantWateringSystemUsingSoilMoisture.html" target="_blank">
-            <img src="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/images/image1.png" alt="Plant Watering Image">
+            <span class="arrow">&#9654;</span>
+        </div>
+        <div class="accordion-content">
+            <a href="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/4DigitPasswordLockUsingKeypadServoMotorwithAr.html" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
             Automatic Plant Watering System Using Soil Moisture Sensor and Arduino
-        </a>
-    </li>
-    <li>
-        <a href="Controlling a 7-Segment Display via Serial Monitor using Arduino/Controllinga7SegmentDisplayviaSerialMonitorus.html" target="_blank">
-            <img src="Controlling a 7-Segment Display via Serial Monitor using Arduino/images/image1.png" alt="7-Segment Display Image">
+            <span class="arrow">&#9654;</span>
+        </div>
+        <div class="accordion-content">
+            <a href="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/AutomaticPlantWateringSystemUsingSoilMoisture.html" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
             Controlling a 7-Segment Display via Serial Monitor using Arduino
-        </a>
-    </li>
-    <li>
-        <a href="Electronics and Robotics Terms for Students/ElectronicsandRoboticsTermsforStudents.html" target="_blank">
-            <img src="Electronics and Robotics Terms for Students/images/image1.png" alt="Electronics Terms Image">
+            <span class="arrow">&#9654;</span>
+        </div>
+        <div class="accordion-content">
+            <a href="Controlling a 7-Segment Display via Serial Monitor using Arduino/Controllinga7SegmentDisplayviaSerialMonitorus.html" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
             Electronics and Robotics Terms for Students
-        </a>
-    </li>
-    <li>
-        <a href="Neopixle LED/NeopixelLED.html" target="_blank">
-            <img src="Neopixle LED/images/image1.png" alt="Neopixle LED Image">
-            Neopixle LED
-        </a>
-    </li>
-    <li>
-        <a href="SMART DUSTBIN SYSTEM TUTORIAL/SMARTDUSTBINSYSTEMTUTORIAL.html" target="_blank">
-            <img src="SMART DUSTBIN SYSTEM TUTORIAL/images/image1.png" alt="Dustbin System Image">
+            <span class="arrow">&#9654;</span>
+        </div>
+        <div class="accordion-content">
+            <a href="Electronics and Robotics Terms for Students/ElectronicsandRoboticsTermsforStudents.html" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            Neopixel LED
+            <span class="arrow">&#9654;</span>
+        </div>
+        <div class="accordion-content">
+            <a href="Neopixle LED/NeopixelLED.html" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
             SMART DUSTBIN SYSTEM TUTORIAL
-        </a>
-    </li>
-    <li>
-        <a href="Ultrasonic Radar with Arduino/UltrasonicRadarwithArduino.html" target="_blank">
-            <img src="Ultrasonic Radar with Arduino/images/image1.png" alt="Ultrasonic Radar Image">
+            <span class="arrow">&#9654;</span>
+        </div>
+        <div class="accordion-content">
+            <a href="SMART DUSTBIN SYSTEM TUTORIAL/SMARTDUSTBINSYSTEMTUTORIAL.html" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
             Ultrasonic Radar with Arduino
-        </a>
-    </li>
-</ul>
+            <span class="arrow">&#9654;</span>
+        </div>
+        <div class="accordion-content">
+            <a href="Ultrasonic Radar with Arduino/UltrasonicRadarwithArduino.html" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © Robopie Inc. 2025 | Follow us on <a href="https://www.instagram.com/robo_pie/" target="_blank" style="color:#ffdd00;">@robo_pie</a>
+</footer>
+
+<script>
+function toggleAccordion(element) {
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector('.arrow');
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        arrow.classList.remove('rotate');
+    } else {
+        content.style.display = "block";
+        arrow.classList.add('rotate');
+    }
+}
+</script>
 
 </body>
 </html>
