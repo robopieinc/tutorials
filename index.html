@@ -2,212 +2,171 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robopie Inc. Tutorials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robopie Tutorials</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #121212;
+      color: #fff;
     }
     header {
-      background: #104046;
+      background-color: #104046;
       padding: 20px;
       text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      color: #ffffff;
     }
-    .subheader {
-      font-size: 16px;
-      margin-top: 5px;
-      color: #bbb;
-    }
-    .category-title {
-      font-size: 24px;
-      margin: 30px 20px 10px;
-      color: #00c9a7;
-      border-bottom: 2px solid #00c9a7;
-      padding-bottom: 5px;
+    h1 {
+      margin: 0;
+      font-size: 2em;
     }
     .accordion {
-      margin: 10px 20px;
-    }
-    .accordion-item {
       background-color: #104046;
-      border: 1px solid #1e5a60;
-      margin-bottom: 10px;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-    .accordion-header {
-      padding: 15px;
+      color: white;
       cursor: pointer;
-      font-weight: bold;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
       font-size: 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      transition: 0.4s;
     }
-    .accordion-header:hover {
-      background-color: #14616a;
+    .active, .accordion:hover {
+      background-color: #14666e;
     }
-    .accordion-content {
+    .panel {
+      padding: 0 18px;
+      background-color: #1e1e1e;
       display: none;
-      background-color: #0d0d0d;
-      padding: 15px;
+      overflow: hidden;
     }
-    .accordion-content a {
-      display: inline-block;
-      margin-top: 10px;
-      text-decoration: none;
-      color: #00ff88;
-      font-weight: bold;
-      border: 1px solid #00ff88;
-      padding: 8px 15px;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .accordion-content a:hover {
-      background-color: #00ff88;
-      color: #0d0d0d;
-    }
-    footer {
+    .tutorial {
+      margin: 15px 0;
+      padding: 10px;
       background-color: #104046;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .tutorial:hover {
+      background-color: #14666e;
+    }
+    .tutorial a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+    }
+    .footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       font-size: 14px;
-      margin-top: 40px;
-      color: #bbb;
-    }
-    .arrow {
-      transition: transform 0.3s;
-    }
-    .arrow.rotate {
-      transform: rotate(90deg);
+      background-color: #104046;
+      margin-top: 30px;
     }
   </style>
 </head>
-
 <body>
 
 <header>
-  Robopie Inc. Tutorials
-  <div class="subheader">Learn | Build | Innovate</div>
+  <h1>Robopie Tutorials</h1>
+  <p>Explore, Learn, Build.</p>
 </header>
 
-<!-- Basics -->
-<div class="category-title">Basics</div>
-<div class="accordion">
-
-  <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion(this)">
-      Electronics and Robotics Terms for Students
-      <span class="arrow">&#9654;</span>
-    </div>
-    <div class="accordion-content">
-      <a href="Electronics and Robotics Terms for Students/ElectronicsandRoboticsTermsforStudents.html" target="_blank">Open Tutorial</a>
-    </div>
+<button class="accordion">Basics</button>
+<div class="panel">
+  <div class="tutorial">
+    <a href="Blinking LEDs/BlinkingLEDs.html" target="_blank">Blinking LEDs</a>
   </div>
-
-</div>
-
-<!-- Robotics -->
-<div class="category-title">Robotics</div>
-<div class="accordion">
-
-  <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion(this)">
-      4-Digit Password Lock Using Keypad & Servo Motor with Arduino
-      <span class="arrow">&#9654;</span>
-    </div>
-    <div class="accordion-content">
-      <a href="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/4DigitPasswordLockUsingKeypadServoMotorwithAr.html" target="_blank">Open Tutorial</a>
-    </div>
+  <div class="tutorial">
+    <a href="Introduction to Data Types in C-C++ for Arduino Programming/IntroductiontoDataTypesinCCforArduinoProgramm.html" target="_blank">Introduction to Data Types in C-C++ for Arduino Programming</a>
   </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion(this)">
-      SMART DUSTBIN SYSTEM TUTORIAL
-      <span class="arrow">&#9654;</span>
-    </div>
-    <div class="accordion-content">
-      <a href="SMART DUSTBIN SYSTEM TUTORIAL/SMARTDUSTBINSYSTEMTUTORIAL.html" target="_blank">Open Tutorial</a>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion(this)">
-      Ultrasonic Radar with Arduino
-      <span class="arrow">&#9654;</span>
-    </div>
-    <div class="accordion-content">
-      <a href="Ultrasonic Radar with Arduino/UltrasonicRadarwithArduino.html" target="_blank">Open Tutorial</a>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion(this)">
-      Neopixel LED
-      <span class="arrow">&#9654;</span>
-    </div>
-    <div class="accordion-content">
-      <a href="Neopixle LED/NeopixelLED.html" target="_blank">Open Tutorial</a>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion(this)">
-      Automatic Plant Watering System Using Soil Moisture Sensor and Arduino
-      <span class="arrow">&#9654;</span>
-    </div>
-    <div class="accordion-content">
-      <a href="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/AutomaticPlantWateringSystemUsingSoilMoisture.html" target="_blank">Open Tutorial</a>
-    </div>
-  </div>
-
-</div>
-
-<!-- IoT -->
-<div class="category-title">IoT</div>
-<div class="accordion">
-  <div class="accordion-item">
-    <div class="accordion-header">
-      No tutorials yet
-    </div>
+  <div class="tutorial">
+    <a href="Servo Motor with a Potentiometer/ServoMotorwithaPotentiometer.html" target="_blank">Servo Motor with a Potentiometer</a>
   </div>
 </div>
 
-<!-- Raspberry Pi -->
-<div class="category-title">Raspberry Pi</div>
-<div class="accordion">
-  <div class="accordion-item">
-    <div class="accordion-header">
-      No tutorials yet
-    </div>
+<button class="accordion">Robotics</button>
+<div class="panel">
+  <div class="tutorial">
+    <a href="4-Digit Password Lock Using Keypad & Servo Motor with Arduino/4DigitPasswordLockUsingKeypadServoMotorwithAr.html" target="_blank">4-Digit Password Lock Using Keypad & Servo Motor with Arduino</a>
+  </div>
+  <div class="tutorial">
+    <a href="Controlling a 7-Segment Display via Serial Monitor using Arduino/Controllinga7SegmentDisplayviaSerialMonitorus.html" target="_blank">Controlling a 7-Segment Display via Serial Monitor using Arduino</a>
+  </div>
+  <div class="tutorial">
+    <a href="Electronics and Robotics Terms for Students/ElectronicsandRoboticsTermsforStudents.html" target="_blank">Electronics and Robotics Terms for Students</a>
+  </div>
+  <div class="tutorial">
+    <a href="Neopixel LED/NeopixelLED.html" target="_blank">Neopixel LED</a>
+  </div>
+  <div class="tutorial">
+    <a href="SMART DUSTBIN SYSTEM TUTORIAL/SMARTDUSTBINSYSTEMTUTORIAL.html" target="_blank">SMART DUSTBIN SYSTEM TUTORIAL</a>
+  </div>
+  <div class="tutorial">
+    <a href="Ultrasonic Radar with Arduino/UltrasonicRadarwithArduino.html" target="_blank">Ultrasonic Radar with Arduino</a>
+  </div>
+  <div class="tutorial">
+    <a href="Obstacle avoiding robot using IR sensor and L298 motor driver/ObstacleavoidingrobotusingIRsensorandL298moto.html" target="_blank">Obstacle Avoiding Robot using IR Sensor and L298 Motor Driver</a>
+  </div>
+  <div class="tutorial">
+    <a href="Paani poori dispenser machine/Paanipooridispensermachine.html" target="_blank">Paani Poori Dispenser Machine</a>
+  </div>
+  <div class="tutorial">
+    <a href="Ultrasonic Radar with Arduino(python verson)/UltrasonicRadarwithArduino.html" target="_blank">Ultrasonic Radar with Arduino (Python Version)</a>
+  </div>
+  <div class="tutorial">
+    <a href="Joystick controlling Car/JoystickcontrollingCar.html" target="_blank">Joystick Controlling Car</a>
+  </div>
+  <div class="tutorial">
+    <a href="🚀 Arduino Joystick Controlled LED Project/ArduinoJoystickControlledLEDProject.html" target="_blank">Arduino Joystick Controlled LED Project</a>
   </div>
 </div>
 
-<footer>
-  © Robopie Inc. 2025 | Instagram: <a href="https://www.instagram.com/robo_pie/" target="_blank" style="color:#00ff88;">@robo_pie</a>
-</footer>
+<button class="accordion">IoT</button>
+<div class="panel">
+  <div class="tutorial">
+    <a href="Automatic Plant Watering System Using Soil Moisture Sensor and Arduino/AutomaticPlantWateringSystemUsingSoilMoisture.html" target="_blank">Automatic Plant Watering System Using Soil Moisture Sensor and Arduino</a>
+  </div>
+  <div class="tutorial">
+    <a href="Firebase Data Upload & Download with ESP8266 and ESP32/FirebaseDataUploadDownloadwithESP8266andESP32.html" target="_blank">Firebase Data Upload & Download with ESP8266 and ESP32</a>
+  </div>
+</div>
+
+<button class="accordion">Raspberry Pi</button>
+<div class="panel">
+  <div class="tutorial">
+    <a href="Reading Data from Firebase Using Raspberry Pi/FirebaseIntegrationwithRaspberryPiUploadingan.html" target="_blank">Reading Data from Firebase Using Raspberry Pi</a>
+  </div>
+  <div class="tutorial">
+    <a href="Uploading IR Sensor Readings to Firebase Using Raspberry Pi/FirebaseIntegrationwithRaspberryPiUploadingan.html" target="_blank">Uploading IR Sensor Readings to Firebase Using Raspberry Pi</a>
+  </div>
+  <div class="tutorial">
+    <a href="Controlling an LED Using Firebase Data on Raspberry Pi/FirebaseIntegrationwithRaspberryPiUploadingan.html" target="_blank">Controlling an LED Using Firebase Data on Raspberry Pi</a>
+  </div>
+  <div class="tutorial">
+    <a href="Firebase Integration with Raspberry Pi- Uploading and Reading Data Using Python/FirebaseIntegrationwithRaspberryPiUploadingan.html" target="_blank">Firebase Integration with Raspberry Pi - Uploading and Reading Data Using Python</a>
+  </div>
+</div>
+
+<div class="footer">
+  Follow us on Instagram: <b>@robo_pie</b>
+</div>
 
 <script>
-function toggleAccordion(element) {
-    const content = element.nextElementSibling;
-    const arrow = element.querySelector('.arrow');
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        arrow.classList.remove('rotate');
-    } else {
-        content.style.display = "block";
-        arrow.classList.add('rotate');
-    }
-}
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 </script>
 
 </body>
