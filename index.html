@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Robopie Inc. Tutorials</title>
   <style>
     body {
@@ -18,12 +18,10 @@
       text-align: center;
       font-size: 30px;
       font-weight: bold;
-      letter-spacing: 1px;
       color: #ffffff;
     }
     .subheader {
       font-size: 16px;
-      margin-top: 5px;
       color: #bbb;
     }
     .category-title {
@@ -42,7 +40,6 @@
       margin-bottom: 10px;
       border-radius: 8px;
       overflow: hidden;
-      transition: all 0.3s ease;
     }
     .accordion-header {
       padding: 15px;
@@ -81,8 +78,8 @@
       text-align: center;
       padding: 15px;
       font-size: 14px;
-      margin-top: 40px;
       color: #bbb;
+      margin-top: 40px;
     }
     .arrow {
       transition: transform 0.3s;
@@ -100,10 +97,9 @@
   <div class="subheader">Learn | Build | Innovate</div>
 </header>
 
+<!-- Basics -->
 <div class="category-title">Basics</div>
-
 <div class="accordion">
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Electronics and Robotics Terms for Students
@@ -113,7 +109,6 @@
       <a href="Electronics and Robotics Terms for Students/ElectronicsandRoboticsTermsforStudents.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Introduction to Data Types in C-C++ for Arduino Programming
@@ -123,17 +118,20 @@
       <a href="Introduction to Data Types in C-C++ for Arduino Programming/IntroductiontoDataTypesinCCforArduinoProgramm.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
+</div>
 
+<!-- Robotics -->
+<div class="category-title">Robotics</div>
+<div class="accordion">
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Arduino Joystick Controlled LED Project
       <span class="arrow">&#9654;</span>
     </div>
     <div class="accordion-content">
-      <a href="Arduino%20Joystick%20Controlled%20LED%20Project/ArduinoJoystickControlledLEDProject.html" target="_blank">Open Tutorial</a>
+      <a href="Arduino Joystick Controlled LED Project/ArduinoJoystickControlledLEDProject.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Blinking LEDs
@@ -143,7 +141,6 @@
       <a href="Blinking LEDs/BlinkingLEDs.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Joystick controlling Car
@@ -153,7 +150,6 @@
       <a href="Joystick controlling Car/JoystickcontrollingCar.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Obstacle Avoiding Robot using IR sensor and L298 Motor Driver
@@ -163,7 +159,6 @@
       <a href="Obstacle avoiding robot using IR sensor and L298 motor driver/ObstacleavoidingrobotusingIRsensorandL298moto.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Paani Poori Dispenser Machine
@@ -173,7 +168,6 @@
       <a href="Paani poori dispenser machine/Paanipooridispensermachine.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Servo Motor with a Potentiometer
@@ -183,17 +177,11 @@
       <a href="Servo Motor with a Potentiometer/ServoMotorwithaPotentiometer.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
+</div>
 
-  <div class="accordion-item">
-    <div class="accordion-header" onclick="toggleAccordion(this)">
-      Ultrasonic Radar with Arduino (Python Version)
-      <span class="arrow">&#9654;</span>
-    </div>
-    <div class="accordion-content">
-      <a href="Ultrasonic Radar with Arduino/UltrasonicRadarwithArduino.html" target="_blank">Open Tutorial</a>
-    </div>
-  </div>
-
+<!-- IoT -->
+<div class="category-title">IoT</div>
+<div class="accordion">
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Firebase Data Upload & Download with ESP8266 and ESP32
@@ -203,7 +191,11 @@
       <a href="Firebase Data Upload & Download with ESP8266 and ESP32/FirebaseDataUploadDownloadwithESP8266andESP32.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
+</div>
 
+<!-- Raspberry Pi -->
+<div class="category-title">Raspberry Pi</div>
+<div class="accordion">
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Controlling an LED Using Firebase Data on Raspberry Pi
@@ -213,7 +205,6 @@
       <a href="Controlling an LED Using Firebase Data on Raspberry Pi/FirebaseIntegrationwithRaspberryPiUploadingan.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Uploading IR Sensor Readings to Firebase Using Raspberry Pi
@@ -223,7 +214,6 @@
       <a href="Uploading IR Sensor Readings to Firebase Using Raspberry Pi/FirebaseIntegrationwithRaspberryPiUploadingan.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
   <div class="accordion-item">
     <div class="accordion-header" onclick="toggleAccordion(this)">
       Reading Data from Firebase Using Raspberry Pi
@@ -233,24 +223,24 @@
       <a href="Reading Data from Firebase Using Raspberry Pi/FirebaseIntegrationwithRaspberryPiUploadingan.html" target="_blank">Open Tutorial</a>
     </div>
   </div>
-
-</div> <!-- Accordion ends properly here -->
+</div>
 
 <footer>
-  © Robopie Inc. 2025 | Instagram: <a href="https://www.instagram.com/robo_pie/" target="_blank" style="color:#00ff88;">@robo_pie</a>
+  © Robopie Inc. 2025 | Instagram: 
+  <a href="https://www.instagram.com/robo_pie/" target="_blank" style="color:#00ff88;">@robo_pie</a>
 </footer>
 
 <script>
 function toggleAccordion(element) {
-    const content = element.nextElementSibling;
-    const arrow = element.querySelector('.arrow');
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        arrow.classList.remove('rotate');
-    } else {
-        content.style.display = "block";
-        arrow.classList.add('rotate');
-    }
+  const content = element.nextElementSibling;
+  const arrow = element.querySelector('.arrow');
+  if (content.style.display === "block") {
+    content.style.display = "none";
+    arrow.classList.remove('rotate');
+  } else {
+    content.style.display = "block";
+    arrow.classList.add('rotate');
+  }
 }
 </script>
 
